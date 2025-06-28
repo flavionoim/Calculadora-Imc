@@ -38,4 +38,5 @@ function calcular() {
 
 function limpar() {
     res.innerHTML = ''
+    res2.innerHTML = ''
 }
