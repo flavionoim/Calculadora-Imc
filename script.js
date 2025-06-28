@@ -10,8 +10,13 @@ function calcular() {
         let p = Number(peso.value);
         let alt = Number(altura.value);
 
+        if (p <= 0 || alt <= 0) {
+            alert("Peso e altura devem ser números positivos.");
+            return;
+        }
+
         let imc = p / (alt * alt);
-        imc = imc.toFixed(1); 
+        imc = imc.toFixed(0); 
 
         res.innerHTML = `Seu peso é de ${p}kg e sua altura é de ${alt}m. Seu IMC é: ${imc}`;
 
