@@ -35,3 +35,7 @@ function calcular() {
         }
     }
 }
+
+function limpar() {
+    res.innerHTML = ''
+}
